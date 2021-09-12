@@ -7,10 +7,10 @@ import space
 pygame.init() 
 
 # création d'une fenêtre de 800 par 600
-screen = pygame.display.set_mode((200,600))
-pygame.display.set_caption("Space vaders") 
+screen = pygame.display.set_mode((200,600))# on initialise une fenêtre pour l'affichage
+pygame.display.set_caption("Space vaders") # on défini la légende de la fenêtre actuelle
 # chargement de l image de fond
-fond = pygame.image.load('background.png')
+fond = pygame.image.load('background.png')# charge une nouvelle image à partir d'un fichier
 
 ### BOUCLE DE JEU  ###
 running = True # variable pour laisser la fenêtre ouverte
@@ -35,3 +35,4 @@ while running : # boucle infinie pour laisser la fenêtre ouverte
 
     ### Actualisation de la scene ###
     pygame.display.update() # pour mettre à jour l'écran
+    # github suporte tous ces fromats d'image: JPG,PNG,GIF (non animé),BMP,PCX,TGA (non compressé),TIF,LBM(et PBM),PBM(et PGM, PPM),XPM
